@@ -1,0 +1,45 @@
+# Bỏ qua tệp tạm và thư mục build
+/dist/
+build/
+out/
+
+# Bỏ qua tệp node_modules nếu dùng npm/yarn
+node_modules/
+package-lock.json
+yarn.lock
+
+# Bỏ qua tệp cấu hình IDE/VSCode
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Bỏ qua tệp log và cache
+*.log
+*.cache
+
+# Bỏ qua tệp cấu hình cục bộ
+.env
+.local
+
+# Bỏ qua tệp tài nguyên lớn không cần kiểm soát phiên bản
+*.mp4
+*.mov
+*.avi
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Giữ lại mã nguồn chính (HTML, CSS, JS)
+!*.html
+!*.css
+!*.js
+!*.htm
+
+# Bỏ qua tệp biên dịch hoặc minify (nếu có)
+*.min.css
+*.min.js
+
+# Bỏ qua thư mục cụ thể nếu không cần (tùy chỉnh theo dự án)
+/Level 1/HTML_CSS/Bai 1/temp/
+/Level 1/Sth/temp/
