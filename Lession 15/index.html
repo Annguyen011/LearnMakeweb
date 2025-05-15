@@ -14,7 +14,49 @@
         <p class="text-gray-600">Đây là trang khởi tạo cho bài học</p>
     </header>
     <main class="max-w-3xl mx-auto">
-        <p>Bắt đầu chỉnh sửa nội dung tại đây!</p>
+       <h3>Table colspan</h3>
+       <table>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Email</th>
+            </tr>
+
+            <tr>
+                <td>An </td>
+                <td>Nguyen</td>
+                <td>0947047365</td>
+            </tr>
+       </table>
+
+         <h3>Table rowspan</h3>
+         <table>
+                <tr>
+                 <th rowspan="2">Name</th>
+                 <th colspan="2">Email</th>
+                </tr>
+    
+                <tr>
+                 <td>Nguyen</td>
+                 <td>0947047365</td>
+                </tr>
+
+       <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+       </style>
     </main>
 </body>
 </html>
