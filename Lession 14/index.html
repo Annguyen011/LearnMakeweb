@@ -9,12 +9,66 @@
     <script src="js/script.js"></script>
 </head>
 <body class="bg-gray-50 p-8">
-    <header class="text-center mb-8">
-        <h1 class="text-3xl font-bold text-blue-700">Chào mừng đến với Lesson 14</h1>
-        <p class="text-gray-600">Đây là trang khởi tạo cho bài học</p>
-    </header>
-    <main class="max-w-3xl mx-auto">
-        <p>Bắt đầu chỉnh sửa nội dung tại đây!</p>
-    </main>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+
+        <tr>
+            <td>John Doe</td>
+            <td>John Email</td>
+            <td>John Phone</td>
+
+        </tr>
+        <tr>
+            <td>An Nguyen</td>
+            <td>An Email</td>
+            <td>An Phone</td> 
+        </tr>
+        <tr>
+            <td>Nguyen Van A</td>
+            <td>Nguyen Van A Email</td>
+            <td>Nguyen Van A Phone</td>
+        </tr>
+        <tr>
+            <td>Nguyen Van B</td>
+            <td>Nguyen Van B Email</td>
+            <td>Nguyen Van B Phone</td>
+        </tr>
+        <tr>
+            <td>Nguyen Van C</td>
+            <td>Nguyen Van C Email</td>
+            <td>Nguyen Van C Phone</td>
+        </tr>
+
+    </table>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
 </body>
 </html>
