@@ -1,13 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ví dụ Thẻ <picture></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Arial', sans-serif; }
+        .example-container { @apply border-l-4 border-green-500 pl-4 mb-6; }
+        .image-wrapper { @apply max-w-full overflow-hidden rounded-lg shadow-md; }
+    </style>
 </head>
-<body>
-    <picture>
-        
-    </picture>
+<body class="bg-gray-50 p-8 max-w-3xl mx-auto">
+    <header class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-green-700">Ví dụ Thẻ <picture> trong HTML</h1>
+        <p class="text-gray-600">Hiển thị hình ảnh theo kích thước màn hình</p>
+    </header>
+
+    <section class="example-container">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Ví dụ sử dụng thẻ <picture></h2>
+        <div class="image-wrapper">
+            <picture>
+                <!-- Hình ảnh cho màn hình nhỏ (dưới 600px) -->
+                <source media="(max-width: 600px)" srcset="https://via.placeholder.com/300x200?text=Small+Screen">
+                <!-- Hình ảnh cho màn hình trung bình (600px - 900px) -->
+                <source media="(min-width: 601px) and (max-width: 900px)" srcset="https://via.placeholder.com/600x400?text=Medium+Screen">
+                <!-- Hình ảnh mặc định cho màn hình lớn (trên 900px) -->
+                <source media="(min-width: 901px)" srcset="https://via.placeholder.com/1200x600?text=Large+Screen">
+                <!-- Hình ảnh fallback nếu không hỗ trợ <picture> -->
+                <img src="https://via.placeholder.com/1200x600?text=Default+Image" alt="Hình ảnh mẫu" class="w-full h-auto">
+            </picture>
+        </div>
+        <p class="mt-4 text-gray-700">
+            Thẻ <code>&lt;picture&gt;</code> cho phép chọn hình ảnh phù hợp với kích thước màn hình. 
+            - Dưới 600px: Hình 300x200.
+            - 601px - 900px: Hình 600x400.
+            - Trên 901px: Hình 1200x600.
+            Nếu trình duyệt không hỗ trợ, hình mặc định 1200x600 sẽ được sử dụng.
+        </p>
+    </section>
+
+    <section class="example-container">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Ví dụ sử dụng thẻ <picture> với hình ảnh động</h2>
+        <div class="image-wrapper">
+            <picture>
 </body>
 </html>
