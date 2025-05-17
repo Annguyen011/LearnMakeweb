@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 15</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body class="bg-gray-50 p-8">
+    <header class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-blue-700">Chào mừng đến với Lesson 15</h1>
+        <p class="text-gray-600">Đây là trang khởi tạo cho bài học</p>
+    </header>
+    <main class="max-w-3xl mx-auto">
+       <h3>Table colspan</h3>
+       <table>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Email</th>
+            </tr>
+
+            <tr>
+                <td>An </td>
+                <td>Nguyen</td>
+                <td>0947047365</td>
+            </tr>
+       </table>
+
+         <h3>Table rowspan</h3>
+         <table>
+                <tr>
+                 <th rowspan="2">Name</th>
+                 <th colspan="2">Email</th>
+                </tr>
+    
+                <tr>
+                 <td>Nguyen</td>
+                 <td>0947047365</td>
+                </tr>
+
+       <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+       </style>
+    </main>
+</body>
+</html>
