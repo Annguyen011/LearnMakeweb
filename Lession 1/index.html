@@ -16,6 +16,15 @@
     <main class="max-w-3xl mx-auto">
         <p id="Demo-text">Bắt đầu chỉnh sửa nội dung tại đây!</p>
         <h1>Tieu de 12</h1>
+        <script>
+            const updateTextStyle = () => {
+            const textElement = document.getElementById("Demo-text");
+            textElement.style.color = "blue";
+            textElement.style.fontSize = "20px";
+            textElement.style.fontWeight = "bold";
+}
+        </script>
+        <button type="button" onclick="updateTextStyle()">Update text</button>
     </main>
 </body>
 </html>
